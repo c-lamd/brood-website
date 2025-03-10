@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-light border-b border-dark h-[40px] md:h-[60px] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
+    <nav className="bg-[#FFF5DD] border-b border-dark h-[40px] md:h-[60px] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
       <div className="h-full flex items-center justify-end font-[family-name:var(--font-ibm-plex-mono-semi-bold)] uppercase">
         {/* Desktop Navigation - Right Aligned */}
         <div className="hidden md:flex items-center gap-16">

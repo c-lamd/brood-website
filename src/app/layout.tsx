@@ -125,7 +125,7 @@ export default function RootLayout({
         className={`${erotique.variable} ${erotiqueBold.variable} ${erotiqueMedium.variable} ${erotiqueSans.variable} ${erotiqueSansMedium.variable} ${erotiqueSansBold.variable} 
         ${erotiqueSansAlt.variable} ${erotiqueSansAltBold.variable} ${erotiqueSansAltMedium.variable} ${ibmPlexMono.variable} ${ibmPlexMonoItalic.variable} 
         ${ibmPlexMonoBold.variable} ${ibmPlexMonoBoldItalic.variable} ${ibmPlexMonoMedium.variable} ${ibmPlexMonoMediumItalic.variable} ${ibmPlexMonoSemiBold.variable} 
-        ${ibmPlexMonoSemiBoldItalic.variable} antialiased`}
+        ${ibmPlexMonoSemiBoldItalic.variable} antialiased max-w-screen`}
       >
         <Navbar />
         {children}
