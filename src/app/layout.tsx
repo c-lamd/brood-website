@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 const erotique = localFont({
   src: "../../public/fonts/Erotique-Regular.otf",
@@ -56,6 +57,58 @@ const erotiqueSansAltMedium = localFont({
   weight: "100 900",
 });
 
+const ibmPlexMono = localFont({
+  src: "../../public/fonts/IBMPlexMono-Regular.ttf",
+  variable: "--font-ibm-plex-mono-regular",
+  weight: "100 900",
+})
+
+const ibmPlexMonoItalic = localFont({
+  src: "../../public/fonts/IBMPlexMono-Italic.ttf",
+  variable: "--font-ibm-plex-mono-italic",
+  weight: "100 900",
+})
+
+const ibmPlexMonoBold = localFont({
+  src: "../../public/fonts/IBMPlexMono-Bold.ttf",
+  variable: "--font-ibm-plex-mono-bold",
+  weight: "100 900",
+})
+
+const ibmPlexMonoBoldItalic = localFont({
+  src: "../../public/fonts/IBMPlexMono-BoldItalic.ttf",
+  variable: "--font-ibm-plex-mono-bold-italic",
+  weight: "100 900",
+})
+
+const ibmPlexMonoMedium = localFont({
+  src: "../../public/fonts/IBMPlexMono-Medium.ttf",
+  variable: "--font-ibm-plex-mono-medium",
+  weight: "100 900",
+})
+
+const ibmPlexMonoMediumItalic = localFont({
+  src: "../../public/fonts/IBMPlexMono-MediumItalic.ttf",
+  variable: "--font-ibm-plex-mono-medium-italic",
+  weight: "100 900",
+})
+
+const ibmPlexMonoSemiBold = localFont({
+  src: "../../public/fonts/IBMPlexMono-SemiBold.ttf",
+  variable: "--font-ibm-plex-mono-semi-bold",
+  weight: "100 900",
+})
+
+const ibmPlexMonoSemiBoldItalic = localFont({
+  src: "../../public/fonts/IBMPlexMono-SemiBoldItalic.ttf",
+  variable: "--font-ibm-plex-mono-semi-bold-italic",
+  weight: "100 900",
+})
+
+
+
+
+
 export const metadata: Metadata = {
   title: "Brood Coffee",
   description: "Specialty coffee, expertly crafted with unique honeys. Plus, a listening bar inspired by Japan's best - all about quality, craft, and good vibes.",
@@ -69,8 +122,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${erotique.variable} ${erotiqueBold.variable} ${erotiqueMedium.variable} ${erotiqueSans.variable} ${erotiqueSansMedium.variable} ${erotiqueSansBold.variable} ${erotiqueSansAlt.variable} ${erotiqueSansAltBold.variable} ${erotiqueSansAltMedium.variable} antialiased px-4 md:px-[50px]`}
+        className={`${erotique.variable} ${erotiqueBold.variable} ${erotiqueMedium.variable} ${erotiqueSans.variable} ${erotiqueSansMedium.variable} ${erotiqueSansBold.variable} 
+        ${erotiqueSansAlt.variable} ${erotiqueSansAltBold.variable} ${erotiqueSansAltMedium.variable} ${ibmPlexMono.variable} ${ibmPlexMonoItalic.variable} 
+        ${ibmPlexMonoBold.variable} ${ibmPlexMonoBoldItalic.variable} ${ibmPlexMonoMedium.variable} ${ibmPlexMonoMediumItalic.variable} ${ibmPlexMonoSemiBold.variable} 
+        ${ibmPlexMonoSemiBoldItalic.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
