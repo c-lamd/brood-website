@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,24 +12,61 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.07, // 2ms stagger effect
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const linkVariants = {
+    hidden: { y: -20, opacity: 0 },
+    visible: { 
+      y: 0, 
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <nav className="bg-[#FFF5DD] border-b border-dark h-[40px] md:h-[60px] font-[family-name:var(--font-ibm-plex-mono-semi-bold)] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
       <div className="h-full flex items-center justify-end uppercase">
         {/* Desktop Navigation - Right Aligned */}
-        <div className="hidden md:flex items-center gap-16 ">
-          <Link href="/shop" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
-            Shop
-          </Link>
-          <Link href="/about" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
-            About
-          </Link>
-          <Link href="/contact" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
-            Contact
-          </Link>
-          <Link href="/menu" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
-            Menu
-          </Link>
-        </div>
+        <motion.div 
+          className="hidden md:flex items-center gap-16"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
+          <motion.div variants={linkVariants}>
+            <Link href="/menu" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+              Menu
+            </Link>
+          </motion.div>
+          <motion.div variants={linkVariants}>
+            <Link href="/shop" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+              Shop
+            </Link>
+          </motion.div>
+          <motion.div variants={linkVariants}>
+            <Link href="/about" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+              About
+            </Link>
+          </motion.div>
+          <motion.div variants={linkVariants}>
+            <Link href="/contact" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+              Contact
+            </Link>
+          </motion.div>
+        </motion.div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
