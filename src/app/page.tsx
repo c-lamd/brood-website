@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div id="page" className="w-full justify-center min-h-screen mx-4 md:mx-[50px]">
       <main id="main" className="flex flex-col text-center decoration-none relative">
-          <h1 id="brand-title" className="text-pretty text-center w-[calc(100vw-50px)] md:w-[calc(100vw-100px)] font-[family-name:var(--font-erotique-sans-bold)] text-[12vw] h-fit leading-none">BROOD COFFEE</h1>
+          <h1 id="brand-title" className="text-nowrap text-center w-[calc(100vw-50px)] max-h-[260px] md:w-[calc(100vw-100px)] font-[family-name:var(--font-erotique-sans-bold)] text-[11vw] xl:text-[12vw] h-fit leading-none">BROOD COFFEE</h1>
           <div id="folio" className="text-nowrap flex flex-row justify-between items-center border-t border-b w-[calc(100vw-50px)] md:w-[calc(100vw-100px)] font-[family-name:var(--font-ibm-plex-mono-semi-bold)] uppercase text-xs md:text-lg leading-none">
             <h6>VOLUME 1.</h6>
             <h6>IRVINE, CA</h6>
