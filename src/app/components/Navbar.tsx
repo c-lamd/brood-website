@@ -12,20 +12,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#FFF5DD] border-b border-dark h-[40px] md:h-[60px] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
-      <div className="h-full flex items-center justify-end font-[family-name:var(--font-ibm-plex-mono-semi-bold)] uppercase">
+    <nav className="bg-[#FFF5DD] border-b border-dark h-[40px] md:h-[60px] font-[family-name:var(--font-ibm-plex-mono-semi-bold)] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
+      <div className="h-full flex items-center justify-end uppercase">
         {/* Desktop Navigation - Right Aligned */}
-        <div className="hidden md:flex items-center gap-16">
-          <Link href="/shop" className="text-dark hover:text-accent">
+        <div className="hidden md:flex items-center gap-16 ">
+          <Link href="/shop" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
             Shop
           </Link>
-          <Link href="/about" className="text-dark hover:text-accent">
+          <Link href="/about" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
             About
           </Link>
-          <Link href="/contact" className="text-gray-700 hover:text-accent">
+          <Link href="/contact" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
             Contact
           </Link>
-          <Link href="/menu" className="text-gray-700 hover:text-accent">
+          <Link href="/menu" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
             Menu
           </Link>
         </div>
@@ -34,9 +34,8 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-gray-500 hover:text-gray-700 focus:outline-none"
+            className="text-[#1F1818] hover:text-[#DC9A4F] focus:outline-none"
           >
-
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
@@ -47,22 +46,26 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white px-4 pt-2 pb-4 space-y-3">
-          <Link href="/shop" className="block text-dark hover:text-accent">
+      <div 
+        className={`md:hidden bg-[#FFF5DD] px-4 overflow-hidden transition-all ease-out duration-300 border-b border-[#1F1818] ${
+          isMenuOpen ? 'max-h-[200px] pt-2 pb-4 border-opacity-100' : 'max-h-[0px] py-0 border-opacity-0'
+        }`}
+      >
+        <div className="space-y-3">
+          <Link href="/shop" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
             Shop
           </Link>
-          <Link href="/about" className="block text-dark hover:text-accent">
+          <Link href="/about" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
             About
           </Link>
-          <Link href="/contact" className="block text-dark hover:text-accent">
+          <Link href="/contact" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
             Contact
           </Link>
-          <Link href="/menu" className="block text-dark hover:text-accent">
+          <Link href="/menu" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
             Menu
           </Link>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

@@ -10,7 +10,7 @@ module.exports = {
         // Primary colors
         'light': '#fff5dd',
         'dark': '#1F1818',
-        'accent': '#A3865F',
+        'accent': '#DC9A4F',
         'brown': {
           DEFAULT: '#A3865F',
           dark: '#4E3E2F',

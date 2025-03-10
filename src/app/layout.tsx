@@ -105,6 +105,67 @@ const ibmPlexMonoSemiBoldItalic = localFont({
   weight: "100 900",
 })
 
+const cormorantGaramond = localFont({
+  src: "../../public/fonts/CormorantGaramond-Regular.ttf",
+  variable: "--font-cormorant-garamond",
+  weight: "100 900",
+})
+
+const cormorantGaramondItalic = localFont({
+  src: "../../public/fonts/CormorantGaramond-Italic.ttf",
+  variable: "--font-cormorant-garamond-italic",
+  weight: "100 900",
+})
+
+const cormorantGaramondBold = localFont({
+  src: "../../public/fonts/CormorantGaramond-Bold.ttf",
+  variable: "--font-cormorant-garamond-bold",
+  weight: "100 900",
+})
+
+const cormorantGaramondMedium = localFont({
+  src: "../../public/fonts/CormorantGaramond-Medium.ttf",
+  variable: "--font-cormorant-garamond-medium",
+  weight: "100 900",
+})
+
+const cormorantGaramondMediumItalic = localFont({
+  src: "../../public/fonts/CormorantGaramond-MediumItalic.ttf",
+  variable: "--font-cormorant-garamond-medium-italic",
+  weight: "100 900",
+})  
+
+const cormorantGaramondBoldItalic = localFont({
+  src: "../../public/fonts/CormorantGaramond-BoldItalic.ttf",
+  variable: "--font-cormorant-garamond-bold-italic",
+  weight: "100 900",
+})
+
+const cormorantGaramondSemiBold = localFont({
+  src: "../../public/fonts/CormorantGaramond-SemiBold.ttf",
+  variable: "--font-cormorant-garamond-semi-bold",
+  weight: "100 900",
+})
+
+const cormorantGaramondSemiBoldItalic = localFont({
+  src: "../../public/fonts/CormorantGaramond-SemiBoldItalic.ttf",
+  variable: "--font-cormorant-garamond-semi-bold-italic",
+  weight: "100 900",
+})
+
+const cormorantGaramondLight = localFont({
+  src: "../../public/fonts/CormorantGaramond-Light.ttf",
+  variable: "--font-cormorant-garamond-light",
+  weight: "100 900",
+})
+
+const cormorantGaramondLightItalic = localFont({
+  src: "../../public/fonts/CormorantGaramond-LightItalic.ttf",
+  variable: "--font-cormorant-garamond-light-italic",
+  weight: "100 900",
+})
+
+
 
 
 
@@ -125,7 +186,9 @@ export default function RootLayout({
         className={`${erotique.variable} ${erotiqueBold.variable} ${erotiqueMedium.variable} ${erotiqueSans.variable} ${erotiqueSansMedium.variable} ${erotiqueSansBold.variable} 
         ${erotiqueSansAlt.variable} ${erotiqueSansAltBold.variable} ${erotiqueSansAltMedium.variable} ${ibmPlexMono.variable} ${ibmPlexMonoItalic.variable} 
         ${ibmPlexMonoBold.variable} ${ibmPlexMonoBoldItalic.variable} ${ibmPlexMonoMedium.variable} ${ibmPlexMonoMediumItalic.variable} ${ibmPlexMonoSemiBold.variable} 
-        ${ibmPlexMonoSemiBoldItalic.variable} antialiased max-w-screen`}
+        ${ibmPlexMonoSemiBoldItalic.variable} ${cormorantGaramond.variable} ${cormorantGaramondItalic.variable} ${cormorantGaramondBold.variable} ${cormorantGaramondBoldItalic.variable}
+        ${cormorantGaramondMedium.variable} ${cormorantGaramondMediumItalic.variable} ${cormorantGaramondSemiBold.variable} ${cormorantGaramondSemiBoldItalic.variable}
+        ${cormorantGaramondLight.variable} ${cormorantGaramondLightItalic.variable} antialiased max-w-screen`}
       >
         <Navbar />
         {children}
