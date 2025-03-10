@@ -1,4 +1,7 @@
-export default function Home() {
+import VideoPlayer from './components/VideoPlayer';
+
+export default async function Home() {
+
   return (
     <div id="page" className="w-full justify-center min-h-screen mx-[25px] md:mx-[50px]">
       <main id="main" className="flex flex-col text-center decoration-none relative w-[calc(100vw-50px)] md:w-[calc(100vw-100px)] h-[100vh - 40px] md:h-[100vh - 60px]">
@@ -25,11 +28,7 @@ export default function Home() {
                 BUZZ WORDS
               </h3>
             </div>
-            <div id="video-player" className="flex-10 flex-col text-left">
-              <video autoPlay muted loop playsInline className="w-full h-full object-cover" >
-                <source src="/videos/b-roll-footage.mp4" type="video/mp4" />
-              </video>
-            </div>
+            <VideoPlayer />
 
           </div>
         </main>
