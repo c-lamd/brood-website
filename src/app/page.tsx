@@ -27,7 +27,7 @@ export default function Home() {
             </div>
             <div id="video-player" className="flex-10 flex-col text-left">
               <video autoPlay muted loop playsInline className="w-full h-full object-cover" >
-                <source src="/videos/main-b-roll-footage.mp4" type="video/mp4" />
+                <source src="/videos/b-roll-footage.mp4" type="video/mp4" />
               </video>
             </div>
 
