@@ -2,7 +2,7 @@
 
 export default function VideoPlayer() {
     return (
-        <div id="video-player" className="flex-10 flex-col text-left">
+        <div id="video-player" className="flex-1 flex flex-col text-left h-full">
             <video
                 autoPlay
                 muted
@@ -14,7 +14,7 @@ export default function VideoPlayer() {
                     video.play();
                 }}
             >
-                <source src="/videos/b-roll-footage.mp4" type="video/mp4" />
+                <source src="/videos/b-roll-footage-white-intro.mp4" type="video/mp4" />
             </video>
         </div>
     );

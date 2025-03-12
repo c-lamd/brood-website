@@ -190,7 +190,7 @@ export default function RootLayout({
         ${ibmPlexMonoBold.variable} ${ibmPlexMonoBoldItalic.variable} ${ibmPlexMonoMedium.variable} ${ibmPlexMonoMediumItalic.variable} ${ibmPlexMonoSemiBold.variable} 
         ${ibmPlexMonoSemiBoldItalic.variable} ${cormorantGaramond.variable} ${cormorantGaramondItalic.variable} ${cormorantGaramondBold.variable} ${cormorantGaramondBoldItalic.variable}
         ${cormorantGaramondMedium.variable} ${cormorantGaramondMediumItalic.variable} ${cormorantGaramondSemiBold.variable} ${cormorantGaramondSemiBoldItalic.variable}
-        ${cormorantGaramondLight.variable} ${cormorantGaramondLightItalic.variable} antialiased max-w-screen`}
+        ${cormorantGaramondLight.variable} ${cormorantGaramondLightItalic.variable} antialiased overflow-x-hidden w-full`}
       >
         <Navbar />
         {children}
