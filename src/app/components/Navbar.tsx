@@ -47,22 +47,22 @@ const Navbar = () => {
           variants={containerVariants}
         >
           <motion.div variants={linkVariants}>
-            <Link href="/menu" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+            <Link href="/menu" className="text-dark hover:text-[#DC9A4F] transition-all duration-150 ease-out">
               Menu
             </Link>
           </motion.div>
           <motion.div variants={linkVariants}>
-            <Link href="/shop" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+            <Link href="/shop" className="text-dark hover:text-[#DC9A4F] transition-all duration-150 ease-out">
               Shop
             </Link>
           </motion.div>
           <motion.div variants={linkVariants}>
-            <Link href="/about" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+            <Link href="/about" className="text-dark hover:text-[#DC9A4F] transition-all duration-150 ease-out">
               About
             </Link>
           </motion.div>
           <motion.div variants={linkVariants}>
-            <Link href="/contact" className="text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150 ease-out">
+            <Link href="/contact" className="text-dark hover:text-[#DC9A4F] transition-all duration-150 ease-out">
               Contact
             </Link>
           </motion.div>
@@ -72,7 +72,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
-            className="text-[#1F1818] hover:text-[#DC9A4F] focus:outline-none"
+            className="text-dark hover:text-[#DC9A4F] focus:outline-none"
           >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -85,21 +85,21 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`md:hidden bg-[#FFF5DD] px-4 overflow-hidden transition-all ease-out duration-300 border-b border-[#1F1818] ${
+        className={`md:hidden bg-[#FFF5DD] px-4 overflow-hidden transition-all ease-out duration-300 border-b border-dark ${
           isMenuOpen ? 'max-h-[200px] pt-2 pb-4 border-opacity-100' : 'max-h-[0px] py-0 border-opacity-0'
         }`}
       >
         <div className="space-y-3">
-          <Link href="/shop" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
+          <Link href="/shop" className="block text-dark hover:text-[#DC9A4F] transition-all duration-150">
             Shop
           </Link>
-          <Link href="/about" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
+          <Link href="/about" className="block text-dark hover:text-[#DC9A4F] transition-all duration-150">
             About
           </Link>
-          <Link href="/contact" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
+          <Link href="/contact" className="block text-dark hover:text-[#DC9A4F] transition-all duration-150">
             Contact
           </Link>
-          <Link href="/menu" className="block text-[#1F1818] hover:text-[#DC9A4F] transition-all duration-150">
+          <Link href="/menu" className="block text-dark hover:text-[#DC9A4F] transition-all duration-150">
             Menu
           </Link>
         </div>
