@@ -15,6 +15,15 @@
   --font-mono: var(--font-geist-mono);
   --color-light: oklch(97.17% 0.0332 88.06);
   --color-dark: oklch(21.75% 0.0112 18.05);
+  
+  --animate-fadeIn-700: fadeIn 700ms ease-in forwards;
+  --animate-fadeIn-500: fadeIn 500ms ease-in forwards;
+  --animate-fadeIn-300: fadeIn 300ms ease-in forwards;
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

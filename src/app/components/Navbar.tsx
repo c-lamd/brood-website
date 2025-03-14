@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#FFF5DD] border-b border-dark h-[40px] md:h-[60px] font-[family-name:var(--font-ibm-plex-mono-semi-bold)] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
+    <nav className="bg-light border-b border-dark h-[40px] md:h-[60px] font-[family-name:var(--font-ibm-plex-mono-semi-bold)] sticky top-0 z-50 mx-[25px] md:mx-[50px]">
       <div className="h-full flex items-center justify-end uppercase">
         {/* Desktop Navigation - Right Aligned */}
         <motion.div 
@@ -85,7 +85,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`md:hidden bg-[#FFF5DD] px-4 overflow-hidden transition-all ease-out duration-300 border-b border-dark ${
+        className={`md:hidden bg-light px-4 overflow-hidden transition-all ease-out duration-300 border-b border-dark ${
           isMenuOpen ? 'max-h-[200px] pt-2 pb-4 border-opacity-100' : 'max-h-[0px] py-0 border-opacity-0'
         }`}
       >
