@@ -6,7 +6,7 @@ export default async function Home() {
   return (
     <div id="page" className="w-full justify-center min-h-screen mx-[25px] md:mx-[50px]">
       <main id="main" className="flex flex-col text-center decoration-none relative w-[calc(100vw-50px)] md:w-[calc(100vw-100px)] h-[calc(100vh-40px)] md:h-[calc(100vh-60px)] max-h-[calc(100vh-40px)] md:max-h-[calc(100vh-60px)] overflow-hidden">
-        <div className="flex flex-row text-nowrap text-left justify-center md:justify-between items-end leading-none text-[22vw] md:text-[11vw] xl:text-[12vw]  font-[family-name:var(--font-erotique-sans-bold)] animate-fadeIn-700">
+        <div className="flex flex-row text-nowrap text-left justify-center md:justify-between items-end leading-none text-[22vw] md:text-[11vw] xl:text-[12vw]  font-[family-name:var(--font-erotique-sans-bold)]">
           <h1 id="brand-title-left" >BROOD</h1>
           <h1 id="brand-title-right" className="hidden md:block">COFFEE</h1>
         </div>
@@ -16,7 +16,7 @@ export default async function Home() {
           <h6>{new Date().toLocaleDateString('en-US', { day: '2-digit', month: 'long', year: 'numeric' }).toUpperCase()}</h6>
         </div>
         <div id="headline" className="flex justify-center text-pretty items-center border-b border-dark">
-          <h3 className="font-[family-name:var(--font-cormorant-garamond-medium-italic)] text-[7vw] lg:text-[6vw] xl:text-[4vw] animate-fadeIn-700 uppercase leading-none">
+          <h3 className="font-[family-name:var(--font-cormorant-garamond-medium-italic)] text-[7vw] lg:text-[6vw] xl:text-[4vw] uppercase leading-none">
             BREAKING NEWS: NEW COFFEE SHOP TO DEBUT IN OC
           </h3>
         </div>
