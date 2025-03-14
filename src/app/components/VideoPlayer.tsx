@@ -23,7 +23,8 @@ export default function VideoPlayer() {
                 playsInline
                 className="w-full h-full object-cover"
             >
-                <source src="/videos/b-roll-footage-white-intro.mp4" type="video/mp4" />
+                <source src="/videos/b-roll-footage.mp4" type="video/mp4" />
+                {/* <source src="/videos/b-roll-footage-white-intro.mp4" type="video/mp4" /> */}
             </video>
         </div>
     );
