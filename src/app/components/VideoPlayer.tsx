@@ -14,7 +14,7 @@ export default function VideoPlayer() {
     }, []);
 
     return (
-        <div className="flex-1 flex flex-col text-left h-full">
+        <div className="flex-1 flex flex-col text-left h-full animate-fadeIn-2000">
             <video
                 ref={videoRef}
                 autoPlay
